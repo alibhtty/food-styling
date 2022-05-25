@@ -1,0 +1,805 @@
+/* Site by mattmoney.co.uk/design */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700");
+body, html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: black;
+  font-family: open sans;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+header {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); /*FADE COLOR*/
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=0);
+  padding: 50px;
+  width: 100%;
+  height: 1%;
+  font-size: 0;
+  position: fixed;
+  z-index: 2;
+}
+logo {
+  width: 15vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+logo img {
+  max-width: 100%;
+} 
+menu {
+  display: inline-block;
+  width: calc(85vw - 100px);
+  text-align: right;
+  font-size: 13px;
+  vertical-align: middle;
+  letter-spacing: 3px;
+  padding: 0;
+}
+menu a {
+  padding: 10px;
+  font-weight: 700;
+}
+.tubular-mute {
+  bottom: 0;
+  position: absolute;
+  padding: 30px;
+}
+#wrapper {
+  height: 100%;
+}
+wrap {
+  padding-top: 150px;
+  display: block;
+  padding-bottom: 50px;
+}
+#instafeed {
+  text-align: center;
+  font-size: 0;
+  text-transform: initial;
+  position: relative;
+  padding: .5vw;
+}
+.instagram_container {
+  display: inline-block;
+  width: calc(100vw / 3 - 2.5vw);
+  margin: 1vw;
+  vertical-align: top;
+  font-size: 13px;
+  position: relative;
+  height: calc(100vw / 3 - 2.5vw);
+  background-size: cover;
+  background-position: center;
+}
+#instafeed .instagram_image {
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+  max-height: 100%;
+}
+.icon-heart:before, .icon-bubble:before {
+  font-family: 'FontAwesome';
+}
+.icon-heart:before {
+  content: "\f004"
+}
+.icon-bubble:before {
+  content: "\f075"
+}
+.owner {
+  display: none;
+}
+.likes, .comments {
+  display: inline-block;
+  margin: 0 10px;
+}
+description {
+  font-size: 0;
+  display: block;
+  height: 0;
+}
+.instagram_image_meta {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  width: 100%;
+  color: black;
+  opacity: 0;
+  pointer-events: none;
+  letter-spacing: 2px;
+}
+.instagram_image_meta p {
+  margin: 0;
+}
+.instagram_image_meta a {
+  color: black;
+}
+.caption {
+  padding: 20px
+}
+#slideshow > div {
+  position: absolute;
+}
+#slideshow img {
+  width: 100vw;
+}
+.tour .wrap {
+  display: block;
+  padding: 30px;
+  padding-top: calc(100vw / 2.6);
+}
+footer {
+  text-align: center;
+  font-size: 0;
+  padding: 30px 0;
+}
+signup, social, listen {
+  display: inline-block;
+  width: 33%;
+  vertical-align: middle;
+}
+footer .fa, footer img {
+  padding: 30px 10px;
+  font-size: 20px;
+}
+footer a {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+}
+signup {
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+footer img {
+  height: 20px;
+}
+footer social img {
+  height: 18px;
+}
+music {
+  text-align: center;
+}
+/* .music header {
+  background: #232323;
+} */
+spotlight {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  margin-bottom: 50px;
+  background: #232323;
+}
+music wrap {
+  padding: 0;
+  font-size: 0;
+  max-width: 960px;
+  margin: auto;
+}
+release {
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+release iframe {
+  position: relative;
+}
+release img {
+  width: 300px;
+}
+release buy {
+  display: none;
+}
+left {
+  display: inline-block;
+  width: 300px;
+  font-size: 0;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+left img {
+  width: 100%
+}
+right {
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+right h1 {
+  letter-spacing: 10px;
+  margin: 0 0 20px;
+}
+dots buy, buy a {
+  display: inline-block;
+  font-weight: 700;
+  background: white;
+  margin: 10px 0;
+  padding: 20px;
+  font-size: initial;
+  letter-spacing: 5px;
+  color: black;
+}
+buy a {
+  background: black;
+  color: white;
+}
+dots buy {
+  margin-top: 20px;
+}
+dots {
+  padding: 50px 0 50px;
+  display: block
+}
+blur {
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+}
+blur img {
+  width: 110%;
+  margin-left: -5%;
+  -moz-filter: blur(50px);
+  -o-filter: blur(50px);
+  -ms-filter: blur(50px);
+  filter: blur(50px);
+  -webkit-filter: blur(50px);
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#big-video-wrap {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.videos iframe {
+  width: 100%;
+  height: 600px;
+}
+.video-item {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.video-item img {
+  opacity: .3;
+}
+.video-item img {
+  width: calc(100vw / 3);
+}
+.pagination span {
+  opacity: 1;
+  cursor: pointer;
+}
+.pagination {
+  text-align: center;
+  padding: 20px;
+}
+.pagination span {
+  background: white;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  width: 100px;
+}
+.videos-container .title, .video-item .title {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  width: 90%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-shadow: 0 0 10px black;
+  letter-spacing: 5px;
+  right: 0;
+  margin: auto;
+  font-weight: 700;
+}
+.events {
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+.date {
+  width: 10%;
+  display: inline-block;
+}
+#right .events p {
+  padding: 0;
+}
+venue, city, more {
+  width: 35%;
+  display: inline-block;
+}
+more {
+  width: 20%;
+}
+.events li {
+  margin: 10px 0;
+}
+.events a {
+  text-align: center;
+  display: block;
+  color: white;
+  padding: 10px;
+  border: solid 1px;
+}
+.events span {
+  margin-right: 10px;
+}
+mobmenu {
+  display: none;
+}
+menu wrap {
+  padding: 0;
+}
+#container2, #pagination2 {
+  display: none;
+}
+.home {
+  color: black;
+}
+.home footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.news wrap {
+  padding-bottom: 0;
+}
+#instafeed .photo {
+  display: none;
+}
+menu a:nth-child(6) {
+  padding-left: 15px;
+  letter-spacing: 2px;
+}
+menu a:hover {
+  background: white;
+  color: black;
+}
+.instagram_container:hover {
+  background: white !important;
+}
+.instagram_container:hover .instagram_image_meta {
+  opacity: 1
+}
+.event:hover {
+  background: white;
+  color: black;
+}
+footer a:hover, .pagination span:hover {
+  opacity: .7;
+}
+release:hover buy {
+  display: initial;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin: 109px 0;
+}
+buy a:hover {
+  color: white;
+}
+buy:hover {
+  opacity: .9;
+}
+.pagination span {
+  opacity: 1;
+  cursor: pointer;
+}
+.videos {}
+.insta a {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  background-size: contain;
+  margin: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: black;
+}
+.insta .video:before {
+  content: "\f04b";
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: white;
+  padding: 10px 9px 10px 13px;
+  border-radius: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: bold;
+}
+.insta img {
+  width: 100%;
+}
+.insta span {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  overflow: scroll;
+  overflow-x: hidden;
+  background: black;
+  padding: 20px;
+  line-height: 150%;
+  box-sizing: border-box;
+  opacity: 0;
+  position: relative;
+}
+#instagram-feed {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 1000px;
+  max-width: 100%;
+}
+@media (min-width: 1000px) {
+  .video-item:hover::before {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 90%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-shadow: 0 0 10px black;
+    letter-spacing: 5px;
+    right: 0;
+    margin: auto;
+    font-weight: 700;
+  }
+  .events a:hover {
+    background: white;
+    color: black;
+  }
+  .video-item:hover img {
+    opacity: .5;
+  }
+  .insta a:hover span {
+    opacity: 1;
+  }
+}
+@media (max-width: 1000px) {
+  #big-video-wrap, .home signup, .home listen {
+    display: none;
+  }
+  .home {
+    background: black url("head.jpg") no-repeat center;
+  }
+  menu {
+    font-size: initial;
+    width: calc(100% - 200px);
+  }
+  header {
+    width: calc(100% - 100px);
+  }
+  logo {
+    width: 200px;
+    margin-right: 30px;
+  }
+  signup, social, listen {
+    width: initial;
+    padding: 20px;
+  }
+  left, release {
+    line-height: 0;
+  }
+  buy {
+    line-height: initial;
+  }
+  .instagram_container {
+    background: none;
+  }
+  .instagram_image_meta {
+    top: initial;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    position: initial;
+    color: white;
+    opacity: initial;
+    padding: 20px 0;
+  }
+  .instagram_image_meta a {
+    color: white;
+  }
+  .instagram_container:hover .instagram_image {
+    opacity: initial;
+  }
+  .video-item:hover img {
+    opacity: .3;
+  }
+  .video-item:hover .title {
+    display: initial;
+  }
+  #slideshow > div {
+    overflow: hidden;
+    width: 100vw;
+  }
+  #slideshow img {
+    height: 400px;
+    width: initial;
+    margin-left: -200px;
+  }
+  .tour .wrap {
+    padding-top: 430px;
+  }
+  menu wrap, .tour menu wrap {
+    padding: 0;
+  }
+  blur img {
+    margin-left: 0;
+    width: 250%;
+    left: -75%;
+  }
+  right {
+    letter-spacing: 3px;
+  }
+  header {
+    /* text-align: center; */
+    width: 100%;
+    padding: 50px 10%;
+  }  
+  header.show {
+    height: 100%;
+  }
+  .show {
+    display: initial;
+  }
+  .show menu {
+    display: block;
+  }
+  menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: black;
+    display: block;
+    margin: 0;
+    text-align: center;
+    display: none;
+    z-index: -1;
+  }
+  menu a {
+    display: block;
+    padding: 20px;
+  }
+  menu wrap, .tour menu wrap {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+  }
+  mobmenu {
+    display: inline-block;
+  }
+  .mobmenu {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: red;
+  }
+  menu a:hover {
+    background: none;
+    color: white;
+  }
+  /*hamburger*/
+  .c-hamburger {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    text-indent: -9999px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    background: none;
+  }
+  .c-hamburger:focus {
+    outline: 0
+  }
+  .c-hamburger span {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    right: 0;
+    height: 5px;
+    background: white;
+  }
+  .c-hamburger span::after, .c-hamburger span::before {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    content: ""
+  }
+  .dark .c-hamburger span, .dark .c-hamburger span::after, .dark .c-hamburger span::before {
+    background: black;
+  }
+  .c-hamburger--htla.is-active span::after, .c-hamburger--htla.is-active span::before, .c-hamburger--htra.is-active span::after, .c-hamburger--htra.is-active span::before {
+    width: 50%
+  }
+  .c-hamburger span::before {
+    top: -10px;
+  }
+  .c-hamburger span::after {
+    bottom: -10px;
+  }
+  .c-hamburger--htx span {}
+  .c-hamburger--htx span::after, .c-hamburger--htx span::before {
+    -webkit-transition-duration: .3s, .3s;
+    transition-duration: .3s, .3s;
+    -webkit-transition-delay: .3s, 0s;
+    transition-delay: .3s, 0s
+  }
+  .c-hamburger--htx span::before {
+    -webkit-transition-property: top, -webkit-transform;
+    transition-property: top, transform
+  }
+  .c-hamburger--htx span::after {
+    -webkit-transition-property: bottom, -webkit-transform;
+    transition-property: bottom, transform
+  }
+  .c-hamburger--htx.is-active {}
+  .c-hamburger--htx.is-active span {
+    background: none;
+  }
+  .c-hamburger--htx.is-active span::before {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+  }
+  .c-hamburger--htx.is-active span::after {
+    bottom: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+  }
+  .c-hamburger--htx.is-active span::after, .c-hamburger--htx.is-active span::before {
+    -webkit-transition-delay: 0s, .3s;
+    transition-delay: 0s, .3s
+  }
+}
+@media (max-width: 568px) {
+  .video-item img {
+    width: 100%;
+  }
+  .videos iframe {
+    height: 100vw;
+  }
+  #container1, #pagination1, #videos {
+    display: none;
+  }
+  #container2, #pagination2 {
+    display: initial;
+  }
+  #container2 {
+    margin-top: 100px;
+    display: block;
+  }
+  .pagination span:hover {
+    opacity: 1;
+  }
+  #pagination2 {
+    display: block;
+  }
+  left {
+    margin: 0 0 50px;
+  }
+  right {
+    letter-spacing: 2px;
+  }
+  #slideshow img {
+    height: 100vw;
+    width: initial;
+    margin-left: -100vw;
+  }
+  .tour .wrap {
+    padding: calc(100vw) 0 0;
+  }
+  .date, venue, city, more {
+    width: 100%;
+    text-align: center;
+    padding: 5px
+  }
+  .date {
+    padding-top: 30px;
+  }
+  blur img {
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    top: 5%;
+    height: 100%
+  }
+  logo {
+    margin-right: 10px;
+    width: calc(80% - 60px);
+  }
+  .instagram_container {
+    width: 100%;
+    margin: 0 0 50px;
+  }
+  signup, social, listen {
+    display: block;
+    padding: 0;
+  }
+  #instafeed .photo {
+    width: 100%;
+    display: inline-block;
+  }
+  .instagram_container {
+    background: none !important;
+  }
+}
